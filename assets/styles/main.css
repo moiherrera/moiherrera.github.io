@@ -1,0 +1,702 @@
+.scrolling-wrapper {
+display: flex;
+flex-direction: row;
+width: 500vw;
+transform: rotate(90deg) translateY(-100vh);
+transform-origin: top left;
+position: absolute;
+background-image: url(public/hongkongme.jpg);
+
+}
+
+.outside-wrapper {
+width: 100vh;
+height: 100vw;
+transform: rotate(-90deg) translateX(-100vh);
+transform-origin: top left;
+overflow-y: scroll;
+overflow-x: hidden;
+position: absolute;
+scrollbar-width: none;
+-ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+.box {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    /* border: 2px solid black; */
+  }
+  .box-text {
+    opacity: 0;
+  }
+
+  .resume-link{
+    position: relative;
+    left: 700px;
+    bottom: -120px;
+  }
+
+
+/* .fallingvine {
+  position: relative;
+  width: 200px;
+  height: 300px;
+} */
+
+.modal-body {
+  height: 45vh;
+}
+
+.carousel {
+    position: absolute;
+    right: 1rem;
+    left: 0rem;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+}
+
+.carousel-indicators {
+  height: 100%;
+}
+
+.chinaInner {
+  position: relative;
+  display: flex;
+  text-align: center;
+}
+.geodesignInner {
+  position: relative;
+  display: flex;
+  text-align: center;
+}
+
+.locisnetInner {
+  position: relative;
+  display: flex;
+  text-align: center;
+}
+
+.carousel .carousel-inner{
+  height: 45vh;
+  width: auto;
+}
+
+.carousel-item {
+  height: 90%;
+  width: 100%;
+}
+
+.caption-text-carousel {
+  font-family: 'Sunflower', sans-serif;
+}
+
+.modal-title {
+  font-family: 'Sunflower', sans-serif;
+  font-size: 18px;
+  position: relative;
+  left: 320px;
+  font-weight: bold;
+}
+
+.nav {
+  position: absolute;
+  list-style: none;
+  background-color: white;
+  overflow: hidden;
+  width: 100vw;
+  top: 0px;
+  left: 0px;
+  z-index: 999;
+}
+/* Style the links inside the navigation bar */
+
+.nav a {
+  float: left;
+  color: black;
+  text-align: left;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: lighter;
+  font-family: 'Sunflower', sans-serif;
+}
+
+/* Change the color of links on hover */
+.nav a:hover {
+  background-color: #ddd;
+  color: black;
+  opacity: .5;
+}
+
+
+.name {
+  position: relative;
+  width: 500px;
+  left: 660px;
+  bottom: -20px;
+  font-size: 50px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
+
+  /* border: 1px dotted black; */
+}
+
+.descriptors {
+  position: relative;
+  left: 665px;
+  bottom: -25px;
+  font-size: 18px;
+}
+
+.first-animation {
+  font-family: 'Sunflower', sans-serif;
+  position: relative;
+  left: 650px;
+  width: 280px;
+  bottom: -150px;
+  height: 300px;
+  font-size: 18px;
+}
+
+.first {
+  animation-delay: 1s;
+}
+.second {
+  animation-delay: 2.5s;
+}
+.third {
+  animation-delay: 3.5s;
+}
+
+.emphasis {
+  color: #4169e1;
+}
+
+/* Slider */
+
+.img-container {
+ height: 550px;
+ overflow: hidden;
+ position: relative;
+ width: 400px;
+ left: 140px;
+ bottom: 315px;
+ box-shadow: 10px 10px 5px grey;
+}
+
+.img-container img {
+ height: 100%;
+ left: 0;
+ object-fit: cover;
+ object-position: center;
+ opacity: 0;
+ position: absolute;
+ top: 0;
+ width: 100%;
+ z-index: -1;
+}
+
+.img-container img.next {
+ opacity: 1;
+ z-index: 1;
+}
+
+.img-container img.prev {
+ opacity: 1;
+ z-index: 2;
+}
+
+.img-container img.fade-out {
+ opacity: 0;
+ transition: visibility 20s 20s, opacity .3s linear;
+ visibility: hidden;
+}
+
+/* Slider */
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+/* View 2 About Me */
+
+.aboutintrobox {
+  font-family: 'Sunflower', sans-serif;
+  position: relative;
+  width: 1100px;
+  height: 550px;
+  left: 65px;
+  bottom: -25px;
+  background-color: white;
+  color: rgba(170, 86, 55, 1);
+
+}
+h1 {
+  text-decoration: underline;
+}
+
+.about-text {
+  position: relative;
+  width: 420px;
+  height: 400px;
+  font-size: 17px;
+  word-wrap: break-word;
+  text-align: justify;
+  white-space: pre-wrapper;
+  overflow:  visible;
+  text-overflow: clip;
+}
+
+.bemaimage {
+  position: relative;
+  width: 650px;
+  height: 400px;
+  left: 450px;
+  bottom: 400px;
+}
+
+
+/* Third View/ Research & Design */
+
+.research-text {
+  font-family: 'Sunflower', sans-serif;
+  position: relative;
+  width: 520px;
+  height: 100px;
+  left: 50px;
+  bottom: -15px;
+  font-size: 42px;
+  color: rgba(0, 0, 0, .7);
+}
+
+.explore {
+  position: relative;
+  font-family: 'Sunflower', sans-serif;
+  width: 250px;
+  height: 300px;
+  left: 50px;
+  bottom: -150px;
+  font-size: 36px;
+  color: rgba(0, 0, 0, .7);
+
+}
+
+.utopia-box {
+  word-wrap: break-word;
+  position: relative;
+  width: 500px;
+  height: 250px;
+  padding: 0px;
+  /* border: 1px dotted black; */
+  left: 455px;
+  bottom: 150px;
+}
+
+.utopia-box:hover {
+  transform: translate(0, -120px);
+  transition-duration: 1s;
+}
+
+
+.map-box {
+  position: relative;
+  width: 450px;
+  height: 320px;
+  /* border: 1px dotted black; */
+  left: 650px;
+  bottom: 590px;
+}
+
+.map-box:hover {
+  transform: translate(0, -120px);
+  transition-duration: 1s;
+}
+
+.china-box {
+  position: relative;
+  width: 400px;
+  height: 250px;
+  /* border: 1px dotted black; */
+  left: 550px;
+  bottom: 370px;
+}
+
+.china-box:hover {
+  transform: translate(0, -120px);
+  transition-duration: 1s;
+}
+.creativity {
+  position: relative;
+  width:160px;
+  font-size: 35px;
+}
+.empathy {
+  position: relative;
+  width:150px;
+  font-size: 35px;
+  left:155px;
+  bottom: 68px;
+  /* border: 1px dotted black; */
+
+}
+.curiousity {
+  position: relative;
+  width:150px;
+  font-size: 35px;
+  /* border: 1px dotted black; */
+  left: 304px;
+  bottom: 137px;
+}
+
+.concern {
+  position: relative;
+  width:150px;
+  font-size: 35px;
+  left: 467px;
+  bottom: 205px;
+}
+
+.bar {
+position: relative;
+  width: 120px;
+  height: 800px;
+  left: 300px;
+  background-color: rgba(66, 205, 24, 0);
+
+}
+.project-intro {
+position: relative;
+/* border: 1px solid black; */
+font-size: 36px;
+color: rgba(0, 0, 0, .7);
+width: 400px;
+height: 50px;
+bottom: 770px;
+left: 30px;
+}
+
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.1); }
+
+.project-text {
+  word-wrap: break-word;
+  text-align: justify;
+  white-space: pre-wrapper;
+  overflow:  visible;
+  text-overflow: clip;
+  font-size: 13px;
+}
+
+.ttt {
+  position: relative;
+  width: 230px;
+  height: 350px;
+  left: 35px;
+  bottom: 700px;
+  border: 1px solid black;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, .6);
+}
+
+.ttt-image {
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: fill;
+}
+
+.gridleaves {
+  position: relative;
+  width: 230px;
+  height: 350px;
+  left: 333px;
+  bottom: 1050px;
+  border: 1px solid black;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, .6);
+}
+
+.gridleaves-image {
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: fill;
+}
+
+.chatbox {
+  position: relative;
+  width: 230px;
+  height: 350px;
+  left: 652px;
+  bottom: 1398px;
+  border: 1px solid black;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, .6);
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.chatbox-image {
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: fill;
+}
+
+.locisnet {
+  position: relative;
+  width: 230px;
+  height: 350px;
+  left: 967px;
+  bottom: 1750px;
+  border: 1px solid black;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, .6);
+}
+
+.locisnet-image {
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: fill;
+}
+
+.project-display {
+  position: relative;
+  width:100%;
+  height: 50%;
+
+}
+
+.project-text {
+  position: relative;
+  width: 100%;
+  height: 50%;
+  bottom: 0px;
+  border: 1px dotted black;
+  background-color: white;
+
+}
+
+
+#language-section {
+  position: relative;
+  left: 120px;
+  bottom: -60px;
+}
+
+#lang-text {
+  position: relative;
+  left: 5px;
+  font-weight: bold;
+  opacity: 0.5;
+}
+
+#library-section {
+  position: relative;
+  left: 270px;
+  bottom: -60px;
+
+}
+
+#fram-text {
+  position: relative;
+  left: -40px;
+  font-weight: bold;
+  opacity: 0.5;
+}
+#tech-section {
+  position: relative;;
+  left: 420px;
+  bottom: -60px;
+}
+#tech-text {
+  position: relative;
+  left: 45px;
+  font-weight: bold;
+  opacity: 0.5;
+}
+
+#icon-section {
+  display: flex;
+  flex-direction: row;
+}
+
+i {
+  position: relative;
+  left: -74px;
+  width: 150px;
+  height: 100px;
+  font-size: 5em;
+}
+
+.ruby {
+  position: relative;
+  left: 15px;
+  bottom: -30px;
+}
+
+.css {
+  position: relative;
+  left: -60px;
+  bottom: -30px;
+}
+.fab {
+  font-size: 5.3em;
+}
+
+.js {
+  position: relative;
+  left: 20px;
+}
+
+.html {
+  position: relative;
+  left: -60px;
+  bottom: -5px;
+}
+
+.nodejs {
+  position: relative;
+  left: -85px;
+}
+
+.express {
+  position: relative;
+  left: -85px;
+  bottom: -40px;
+}
+
+.react {
+  position: relative;
+  left: 5px;
+}
+
+.bootstrap {
+  position: relative;
+  left: 7px;
+  bottom: -45px;
+}
+
+.rails {
+  position: relative;
+  bottom: -75px;
+  left: -85px;
+}
+
+.jquery {
+position: relative;
+left: 0px;
+bottom: -75px;
+
+}
+
+.mongodb {
+  position: relative;
+  left: -80px
+}
+
+.aws {
+  position: relative;
+  left: -25px;
+}
+
+.heroku {
+position: relative;
+left: 40px;
+}
+
+.git {
+position: relative;
+bottom: -40px;
+
+}
+
+.github {
+position: relative;
+left: -20px;
+bottom: -35px;
+font-size: 4.6em;
+
+}
+
+.photoshop {
+  position: relative;
+  left: 50px;
+  bottom: -40px;
+}
+
+.postgresql {
+  position: relative;
+  bottom: -75px;
+}
+
+.wordpress {
+  position: relative;
+  bottom: -70px;
+  left: -20px;
+}
+
+.atom {
+  position: relative;
+  left: 40px;
+  bottom: -70px;
+}
+
+.language-list {
+  position: relative;
+}
+
+.frame-list {
+  text-align: center;
+}
+
+
+
+
+/* .opening {
+  display: flex;
+  position: relative;
+  width: 400px;
+  height: 250px;
+  padding-left: 50px;
+  margin-left: 50px;
+  font-family: 'Sunflower', sans-serif;
+  font-size: 44px;
+  font-weight: 500;
+  left: -40px;
+  border: 2px solid black;
+} */
+
+/* .openingpicone {
+  position: relative;
+  width: 475px;
+  height: 350px;
+  left: 700px;
+  bottom: 50px;
+} */
+
+/* .openingpictwo {
+  position: relative;
+  width: 475px;
+  height: 350px;
+  left: 325px;
+  bottom: 150px;
+} */
+
+/* .sub-opening {
+  border: 1px dotted black;
+  width: 538px;
+  height: 150px;
+  position: fixed;
+  bottom: 200px;
+  overflow-wrap: break-word;
+} */
