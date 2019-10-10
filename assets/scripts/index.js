@@ -68,7 +68,7 @@ $(document).ready(function() {
 $("#navbar a").click(function(event) {
     event.preventDefault();
 
-    $('html, scolling-wrapper').animate({
+    $('html, body').animate({
         scrollTop: $("#elementtoScrollToID").offset().top
     }, 2000)
 })
